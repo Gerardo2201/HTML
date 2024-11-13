@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario </h1>
+    <!--Campo para el nombre-->
+  <div>
+    <label for="Nombre">Nombre</label>
+   
+</div>
+<div>
+    <input type="text" required>
+</div>
+<!--Campo para el apellido solo minusculas-->
+    <div>
+        <label for="apellido">apellido (Solo minusculas)</label>
+    </div>
+    <div>
+        <input type="text" id="apellido" name="apellido" pattern="[a-z]" required>
+    </div>
+<!--Campo para el color-->
+    <div>
+        <label for="Color"> Seleccione un Color</label>
+    </div>
+    <div>
+        <input type="color">
+    </div>
+    <!--Campo para la edad-->
+    <div>
+        <label for="edad">Edad</label>
+    </div>
+    <div><input type="number" required></div>
+    <div>
+        <!--Campo para numeros tipo texto-->
+
+    <title>solo se permiten numeros enteros</title>
+<label for="number">numero</label>
+    </div>
+
+    <div>
+        <input type="text" id="numero" name="numero" required title="requere solo numeros">
+    </div>
+
+    <div>
+
+        <a href="Segunda_parte.html"><input type="button" value="Validar Formulario" required> </a>
+    </div>
+</body>
+</html>
