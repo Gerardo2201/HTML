@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="Inicio.html">Inicio</a>
+        </li>
+    </ul>
+    <section>
+
+    <h1>Formulario </h1>
+    <!--Campo para el nombre-->
+  <div>
+    <form action="Inicio.html" method="get">
+    <label for="Nombre">Nombre</label><br>
+    <input type="text" required placeholder="Ingrese su nombre"> 
+</div><br>
+
+<!--Campo para el apellido solo minusculas-->
+    <div>
+       <label for="apellido">apellido</label><br>
+       <input type="text" id="apellido" name="apellido" pattern="[a-z]*" title="Solo se permiten minusculas" required placeholder="Ingrese su apellido">
+    </div><br>
+
+<!--Campo para el color-->
+    <div>
+        <label for="Color"> Seleccione un Color</label><br>
+        <input type="color" required>
+    </div><br>
+
+    <!--Campo para la edad-->
+    <div>
+        <label for="edad">Edad</label><br>
+        <input type="number" required placeholder="Ingrese su edad">
+    </div><br>
+    
+    <div>
+        <!--Campo para numeros tipo texto-->
+<label for="numero">numero</label><br>
+<input type="text" oninput="this.value = this.value.replace(/[^0-9]/g,'') "name="numero" required title="Ingrese solo numeros">
+
+    </div><br>
+<!--Campo solo numeros positivos-->
+    <div>
+        <label for="numeros">Solo numeros positivos</label><br>
+        <input type="number" id="numeros" name="numeros" min="1" title="Solo numeros positivos" required>
+    </div><br>
+    <!--Campo en el que  el inicio es 15 el minimo es 10 y el maximo 20-->
+    <div>
+<label for="numero minimo-maximo">numero minimo-maximo</label><br>
+<input type="number" id="numero minimo-maximo" name="numero minimo-maximo" value="15" min="10" max="20" required>
+    </div><br>
+    <!--Campo parra la fecha de nacimiento-->
+    <div>
+        <label for="fecha">fecha de nacimiento</label><br>
+        <input type="date" required>
+    </div><br>
+
+    <div>
+        <label for="hora">hora de registro</label><br>
+        <input type="time" required>
+    </div><br>
+
+    <div>
+        <label for="ciudad">Ingrese su ciudad</label><br>
+        <select name="ciudad" id="ciudad" required>
+            <option value="">Seleccione</option>
+            <option value="1">Bucaramanga</option>
+            <option value="2">Bogota</option>
+            <option value="3">Cali</option>
+            <option value="4">Piedecuesta</option>
+            <option value="5">Floridablanca</option>
+            <option value="6">Giron</option>
+    </div><br>
+            
+    
+    
+    <div><br>
+    
+    <label for="Seleccione su genero">Seleccione su genero</label><br>
+    <input type="radio" id="masculino" name="Seleccione su genero" value="Masculino">
+    <label for="Masculino">masculino</label><br>
+    <input type="radio" id="femenino" name="Seleccione su genero" value="Femenino">
+    <label for="femenino">femenino</label><br>
+    <input type="radio" id="otro" name="Seleccione su genero" value="otro">
+    <label for="otro">otro</label><br>
+    </div><br>
+
+    <div>
+        <label for="materias">Seleccione sus materias (opcional)</label><br>
+        <input type="checkbox" id="html" name="materias" value="html">
+        <label for="html">html</label><br>
+        <input type="checkbox" id="css" name="materias" value="css">
+        <label for="css">css</label><br>
+        <input type="checkbox" id="js" name="materias" value="js">
+        <label for="js">js</label><br>
+        <input type="checkbox" id="java" name="materias" value="java">
+        <label for="java">java</label><br>
+        <input type="checkbox" id="python" name="materias" value="python">
+        <label for="python"> python</label><br>
+        <input type="checkbox" id="php" name="materias" value="php">
+        <label for="php">php</label><br>
+    </div><br>
+
+    <div>
+        <label for="imagenes"> Seleccione las imagenes(opcional)</label><br>
+        <input type="file" id="imagenes" name="imagenes" accept=".jpg, .jpeg, .png" multiple>
+    </div>
+
+    <div>
+        <label for="contraseña">contraseña</label><br>
+        <input type="password" id="contraseña" placeholder="ingrese la contraseña" required title="Ingrese la contraseña">
+    </div><br>
+
+    <div>
+        <label for="nombre">Nombre del aprendiz:</label>
+        <input type="text" id="nombre" name="nombre" value="Gerardo Andréz Martínez Vera/ADSO/No.3065369" readonly>
+    </div>
+</section>
+
+
+    <div>
+        <button type="submit">Enviar</button>
+        <form action="Inicio.html" method="get"></form>
+    </div>
+</body>
+</html>
