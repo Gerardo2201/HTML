@@ -18,13 +18,13 @@
   <div>
     <form action="Inicio.html" method="get">
     <label for="Nombre">Nombre</label><br>
-    <input type="text" required> 
+    <input type="text" required placeholder="Ingrese su nombre"> 
 </div><br>
 
 <!--Campo para el apellido solo minusculas-->
     <div>
        <label for="apellido">apellido</label><br>
-       <input type="text" id="apellido" name="apellido" pattern="[a-z]*" title="Solo se permiten minusculas" required>
+       <input type="text" id="apellido" name="apellido" pattern="[a-z]*" title="Solo se permiten minusculas" required placeholder="Ingrese su apellido">
     </div><br>
 
 <!--Campo para el color-->
@@ -36,13 +36,14 @@
     <!--Campo para la edad-->
     <div>
         <label for="edad">Edad</label><br>
-        <input type="number" required>
+        <input type="number" required placeholder="Ingrese su edad">
     </div><br>
     
     <div>
         <!--Campo para numeros tipo texto-->
-<label for="number">numero</label><br>
-<input type="text" id="numero" name="numero" required title="requere solo numeros">
+<label for="numero">numero</label><br>
+<input type="text" oninput="this.value = this.value.replace(/[^0-9]/g,'') "name="numero" required title="Ingrese solo numeros">
+
     </div><br>
 <!--Campo solo numeros positivos-->
     <div>
@@ -104,8 +105,22 @@
         <label for="python"> python</label><br>
         <input type="checkbox" id="php" name="materias" value="php">
         <label for="php">php</label><br>
+    </div><br>
+
+    <div>
+        <label for="imagenes"> Seleccione las imagenes(opcional)</label><br>
+        <input type="file" id="imagenes" name="imagenes" accept=".jpg, .jpeg, .png" multiple>
     </div>
 
+    <div>
+        <label for="contraseña">contraseña</label><br>
+        <input type="password" id="contraseña" placeholder="ingrese la contraseña" required title="Ingrese la contraseña">
+    </div><br>
+
+    <div>
+        <label for="nombre">Nombre del aprendiz:</label>
+        <input type="text" id="nombre" name="nombre" value="Gerardo Andréz Martínez Vera/ADSO/No.3065369" readonly>
+    </div>
 </section>
 
 
