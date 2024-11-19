@@ -18,13 +18,13 @@
   <div>
     <form action="Inicio.html" method="get">
     <label for="Nombre">Nombre</label><br>
-    <input type="text" required placeholder="Ingrese su nombre"> 
+    <input type="text" required placeholder="Ingrese su nombre" pattern="[A-Za-z]+"> 
 </div><br>
 
 <!--Campo para el apellido solo minusculas-->
     <div>
-       <label for="apellido">apellido</label><br>
-       <input type="text" id="apellido" name="apellido" pattern="[a-z]*" title="Solo se permiten minusculas" required placeholder="Ingrese su apellido">
+      <label for="apellido">apellido</label><br>
+      <input type="text" id="apellido" name="apellido" pattern="[a-z]*" title="Solo se permiten minusculas" required placeholder="Ingrese su apellido">
     </div><br>
 
 <!--Campo para el color-->
@@ -53,19 +53,19 @@
     <!--Campo en el que  el inicio es 15 el minimo es 10 y el maximo 20-->
     <div>
 <label for="numero minimo-maximo">numero minimo-maximo</label><br>
-<input type="number" id="numero minimo-maximo" name="numero minimo-maximo" value="15" min="10" max="20" required>
+<input type="number" id="numero minimo-maximo" name="numero minimo-maximo" step="0.5" value="15" min="10" max="20" required>
     </div><br>
     <!--Campo parra la fecha de nacimiento-->
     <div>
         <label for="fecha">fecha de nacimiento</label><br>
         <input type="date" required>
     </div><br>
-
+<!--Hora de registro-->
     <div>
         <label for="hora">hora de registro</label><br>
         <input type="time" required>
     </div><br>
-
+<!--Campo para ingresar la ciudad-->
     <div>
         <label for="ciudad">Ingrese su ciudad</label><br>
         <select name="ciudad" id="ciudad" required>
@@ -76,10 +76,11 @@
             <option value="4">Piedecuesta</option>
             <option value="5">Floridablanca</option>
             <option value="6">Giron</option>
+        </select>
     </div><br>
             
     
-    
+    <!--Campo para seleccionar el genero-->
     <div><br>
     
     <label for="Seleccione su genero">Seleccione su genero</label><br>
@@ -90,7 +91,7 @@
     <input type="radio" id="otro" name="Seleccione su genero" value="otro">
     <label for="otro">otro</label><br>
     </div><br>
-
+<!--Campo que permita al usuario seleccionar varias materias, (HTML, CSS, JS, JAVA, PYTHON, PHP)-->
     <div>
         <label for="materias">Seleccione sus materias (opcional)</label><br>
         <input type="checkbox" id="html" name="materias" value="html">
@@ -106,19 +107,19 @@
         <input type="checkbox" id="php" name="materias" value="php">
         <label for="php">php</label><br>
     </div><br>
-
+<!--Permite al usuario subir un archivo de formato jpg, jpeg, png-->
     <div>
-        <label for="imagenes"> Seleccione las imagenes(opcional)</label><br>
+        <label for="imagenes"> Seleccione (Imagenes jpg, jpeg, png)</label><br>
         <input type="file" id="imagenes" name="imagenes" accept=".jpg, .jpeg, .png" multiple>
     </div>
-
+<!--Campo para contraseña-->
     <div>
         <label for="contraseña">contraseña</label><br>
         <input type="password" id="contraseña" placeholder="ingrese la contraseña" required title="Ingrese la contraseña">
     </div><br>
-
+<!--Campo para nombre del aprendiz solo lectura-->
     <div>
-        <label for="nombre">Nombre del aprendiz:</label>
+        <label for="nombre">Nombre del aprendiz:</label> <br>
         <input type="text" id="nombre" name="nombre" value="Gerardo Andréz Martínez Vera/ADSO/No.3065369" readonly>
     </div>
 </section>
